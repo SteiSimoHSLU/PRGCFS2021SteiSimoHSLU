@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-// faktorial
+/* faktorial ohne rekursion
 int factorial (int a)
 	{
 	
@@ -12,7 +12,19 @@ int factorial (int a)
 		}
 	return sum;
 	}
-	
+*/
+
+unsigned int factorial(unsigned int a) {
+	if (a <= 1) 
+	{
+		return 1; // Die Fakultät von 0 und 1 ist als 1 definiert.
+	} 
+	else 
+	{
+	return a * factorial(a - 1);
+	}
+}
+        
 		
 //n tief klein
 int nchoosek(int n, int k)
