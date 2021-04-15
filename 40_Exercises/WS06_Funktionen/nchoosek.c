@@ -41,7 +41,7 @@ int nchoosek(int n, int k)
 int main(int argc, char *argv[])
 {
 
-	int n1=4;
+	int n1=20;
 	int k1=2;
 	if (n1<0)
 		{
@@ -57,6 +57,8 @@ int main(int argc, char *argv[])
 		int dividend1=factorial(n1);
 		int divisor1=factorial(k1)*factorial(n1-k1);	
 		printf("n choose k is %d / %d = %d\n",dividend1, divisor1, result);
+		int intType;
+		printf("Size of int: %zu bytes\n", sizeof(intType));
 	}
 
 	
