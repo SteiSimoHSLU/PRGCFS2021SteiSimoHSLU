@@ -17,18 +17,18 @@ int localCounter = 0; //nur hier sichtbar
 //privatefunction
 void IncrementGreetingsCounter( void){
 
-	greetingsCounter ++;
+	greetingsCounter++;
 	}
 
 //implementations
 void SayHello(void){
 	printf("Hello!\n");
-	IncrementGreetingsCounter;
+	IncrementGreetingsCounter();
 	}
 
 void SayGoodbye(void){
 	printf("Goodbye!\n");
-	IncrementGreetingsCounter;
+	IncrementGreetingsCounter();
 	}
 
 

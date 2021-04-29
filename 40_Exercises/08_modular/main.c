@@ -1,6 +1,5 @@
 #include "greetings.h"
 
-struct Student myStudent;
 
 int main ( void ) {
 	while (greetingsCounter <= 10 ){
